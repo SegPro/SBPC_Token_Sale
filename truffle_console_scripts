@@ -22,3 +22,13 @@ BN {
 
 // To get response in number
 totalSupply.toNumber()
+
+// Invalid request
+web3.eth.accounts
+
+// Valid but we can not interract with it because it is asynchronous
+web3.eth.getAccounts()
+
+// Valid
+let accounts = await web3.eth.getAccounts()
+accounts[0]
