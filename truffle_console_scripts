@@ -1,0 +1,24 @@
+// To exit
+.exit
+
+// Get token deployed
+DappToken.deployed().then(function(i) {token=i; })
+
+// Get token address
+token.address
+
+// Get totalSupply of the token
+// Because totalSupply is the name of the var and thanks to solidity a getter is automaticaly presents
+token.totalSupply().then(function(s) { totalSupply = s; )}
+
+// Response of totalSupply
+truffle(development)> totalSupply
+BN {
+  negative: 0,
+  words: [ 1000000, <1 empty item> ],
+  length: 1,
+  red: null
+}
+
+// To get response in number
+totalSupply.toNumber()
