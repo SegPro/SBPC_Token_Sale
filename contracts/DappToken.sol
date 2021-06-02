@@ -19,7 +19,18 @@ contract  DappToken {
         uint256 _value
     );
 
+    // approve
+    event Approval(
+        address indexed _owner,
+        address indexed _spender,
+        uint256 _value
+    );
+
     mapping(address => uint256) public balanceOf;
+
+    // allowance
+    // I I'm account A and I want to approve accout B to spent value token
+    mapping(address => mapping(address => uint256)) public allowance;
 
     // use _ before argument it is a convention in solidity
     constructor (uint256 _initialSupply) public {
@@ -47,5 +58,35 @@ contract  DappToken {
         // Return a boolean
         return true;
 
+    }
+
+    // Delegated Transfer
+
+    // approve
+    // spender is the address on the exchange which want to sent value
+    function approve(address _spender, uint256 _value) public returns (bool success) {
+        // allowance
+        allowance[msg.sender][_spender] = _value;
+        // Approve event
+        emit Approval(msg.sender, _spender, _value);
+        return true;
+    }
+
+    // transferFrom
+    function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+
+        // Require _from has enough tokens
+        require(_value <= balanceOf[_from]);
+        // Require allowance is big enough
+        require(_value <= allowance[_from][msg.sender]);
+        // Change the balanceOf
+        balanceOf[_from]-= _value;
+        balanceOf[_to]+= _value;
+        // Update the allowance
+        allowance[_from][msg.sender] -= _value;
+        // Transfer event
+        emit Transfer(_from, _to, _value);
+        // return a boolean
+        return true;
     }
 }
