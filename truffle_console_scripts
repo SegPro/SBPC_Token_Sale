@@ -1,5 +1,10 @@
+// Before interract with smart contract. Have to do this to recompile token
+truffle migrate --reset
+
 // To exit
 .exit
+
+// By default wheh we do a transaction without specified from it is the first account : accounts[0]
 
 // Get token deployed
 DappToken.deployed().then(function(i) {token=i; })
