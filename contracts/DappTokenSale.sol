@@ -13,6 +13,12 @@ contract  DappTokenSale {
         uint256 _amount
     );
 
+    event Transfer(
+        address indexed _from,
+        address indexed _to,
+        uint256 _value
+    );
+
     constructor (DappToken _tokenContract, uint256 _tokenPrice) public {
         // Assign an admin
         admin = msg.sender;
@@ -26,6 +32,8 @@ contract  DappTokenSale {
     function multiply(uint x, uint y) internal pure returns (uint z) {
         require(y == 0 || (z = x * y) / y == x);
     }
+
+
 
     // Buy tokens
     // Payable function check first if value is authorized on balance sender tx

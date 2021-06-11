@@ -6,6 +6,8 @@ contract  DappToken {
     // Read the total number of tokens
     uint256 public totalSupply;
 
+    address internal admin;
+
     // Name
     string public name = "DApp Token";
     // Symbol
@@ -34,6 +36,7 @@ contract  DappToken {
 
     // use _ before argument it is a convention in solidity
     constructor (uint256 _initialSupply) public {
+        admin = msg.sender;
         balanceOf[msg.sender] = _initialSupply;
         totalSupply = _initialSupply;
         // allocate the initial supply
@@ -58,6 +61,18 @@ contract  DappToken {
         // Return a boolean
         return true;
 
+    }
+
+    function purvey(uint256 _numberOfTokens, address _to) public returns (bool success){
+        require(msg.sender == admin);
+        // Exception if account doesn't have enough
+        require(balanceOf[msg.sender] >= _numberOfTokens);
+        // Transfer the balance
+        balanceOf[msg.sender] -= _numberOfTokens;
+        balanceOf[_to] += _numberOfTokens;
+        emit Transfer(msg.sender, _to, _numberOfTokens);
+        // Return a boolean
+        return true;
     }
 
     // Delegated Transfer

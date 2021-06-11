@@ -8,6 +8,7 @@ truffle migrate --reset
 
 // Get token deployed
 DappToken.deployed().then(function(i) {token=i; })
+DappTokenSale.deployed().then(function(i) {tokenSale=i; })
 
 // Get token address
 token.address
