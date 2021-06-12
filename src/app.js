@@ -60,43 +60,39 @@ App = {
         $("#content").hide();
         $("#loader").show();
         $.getJSON("DappTokenSale.json", function (dappTokenSale) {
-            getContract("DappTokenSale",dappTokenSale).then(function (){
+            getContract("DappTokenSale",dappTokenSale).then(function () {
                 App.contracts.DappTokenSale.setProvider(App.provider);
-                console.log(App.contracts.DappTokenSale)
-                getDappTokenSalePrice().then(function (dappTokenSalePrice){
-                    App.tokenPrice = dappTokenSalePrice
-                    $(".token-price").html(web3.utils.fromWei(App.tokenPrice, "ether"));
-                });
-            })
-            //App.render();
-        });
-        $.getJSON("DappToken.json", function (dappToken) {
-            getContract("DappToken",dappToken).then(function (){
-                App.contracts.DappToken.setProvider(App.provider);
-                getDappTokenSaleBalance().then(function (dappTokenSaleBalance) {
-                    App.tokensAvailable = dappTokenSaleBalance
-                    getDappTokenSold().then(function (dappTokenSold) {
-                        App.tokensSold = dappTokenSold
-                        $(".tokens-sold").html(App.tokensSold);
-                        initAmount = parseInt(App.tokensSold)+parseInt(App.tokensAvailable)
-                        $(".tokens-available").html(initAmount);
-                        progressPercent = (Math.ceil(App.tokensSold) / initAmount)*100;
-                        $("#progress").css("width", progressPercent + "%");
-                        if(initAmount > 0) {
-                            $("#start").hide();
-                            $("#content").show();
-                            $("#loader").hide();
-                        }else{
-                            $("#start").show();
-                            $("#content").hide();
-                            $("#loader").hide();
-                        }
-                        //App.purveySale();
+                $.getJSON("DappToken.json", function (dappToken) {
+                    getContract("DappToken", dappToken).then(function () {
+                        App.contracts.DappToken.setProvider(App.provider);
+                        getDappTokenSalePrice().then(function (dappTokenSalePrice){
+                            App.tokenPrice = dappTokenSalePrice
+                            $(".token-price").html(web3.utils.fromWei(App.tokenPrice, "ether"));
+                        });
+                        getDappTokenSaleBalance().then(function (dappTokenSaleBalance) {
+                            App.tokensAvailable = dappTokenSaleBalance
+                            getDappTokenSold().then(function (dappTokenSold) {
+                                App.tokensSold = dappTokenSold
+                                $(".tokens-sold").html(App.tokensSold);
+                                initAmount = parseInt(App.tokensSold)+parseInt(App.tokensAvailable)
+                                $(".tokens-available").html(initAmount);
+                                progressPercent = (Math.ceil(App.tokensSold) / initAmount)*100;
+                                $("#progress").css("width", progressPercent + "%");
+                                if(initAmount > 0) {
+                                    $("#start").hide();
+                                    $("#content").show();
+                                    $("#loader").hide();
+                                }else{
+                                    $("#start").show();
+                                    $("#content").hide();
+                                    $("#loader").hide();
+                                }
+                            })
+                        })
                     })
                 })
-
             })
-        });
+        })
     },
 
     buyToken: function (){
@@ -108,14 +104,11 @@ App = {
 
     purveySale: function() {
         purveyDappTokenSale().then(function (receipt){
-            console.log(receipt)
             getDappTokenSaleBalance().then(function (dappTokenSaleBalance) {
                 App.initContracts()
             })
         })
     }
-
-
 }
 
 async function buy(amount){
@@ -147,12 +140,12 @@ async function getDappTokenSold() {
 }
 
 async function getDappTokenSaleBalance() {
-    balance = await App.contracts.DappToken.methods.balanceOf("0xbfe78D323CbEf40cFe17A5268E3763b978F91BAC").call();
+    balance = await App.contracts.DappToken.methods.balanceOf(App.contracts.DappTokenSale._address).call();
     return(balance)
 }
 
 async function purveyDappTokenSale() {
-    receipt = await App.contracts.DappToken.methods.purvey(200000, "0xbfe78D323CbEf40cFe17A5268E3763b978F91BAC").send({
+    receipt = await App.contracts.DappToken.methods.purvey(200000, App.contracts.DappTokenSale._address).send({
         from: App.currentAccount
     });
     return(receipt)
