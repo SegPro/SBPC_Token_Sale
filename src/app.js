@@ -73,20 +73,7 @@ App = {
                             App.tokensAvailable = dappTokenSaleBalance
                             getDappTokenSold().then(function (dappTokenSold) {
                                 App.tokensSold = dappTokenSold
-                                $(".tokens-sold").html(App.tokensSold);
-                                initAmount = parseInt(App.tokensSold)+parseInt(App.tokensAvailable)
-                                $(".tokens-available").html(initAmount);
-                                progressPercent = (Math.ceil(App.tokensSold) / initAmount)*100;
-                                $("#progress").css("width", progressPercent + "%");
-                                if(initAmount > 0) {
-                                    $("#start").hide();
-                                    $("#content").show();
-                                    $("#loader").hide();
-                                }else{
-                                    $("#start").show();
-                                    $("#content").hide();
-                                    $("#loader").hide();
-                                }
+                                App.listenForEvents()
                             })
                         })
                     })
@@ -95,7 +82,40 @@ App = {
         })
     },
 
+    listenForEvents: function(){
+        App.contracts.DappTokenSale.events.Sell({
+            fromBlock: 0,
+            toBlock: 'latest'
+        }, function(error, event){ console.log(event); })
+            .on('data', function(event){
+                console.log("event triggered", event)
+                $(".tokens-sold").html(App.tokensSold);
+                initAmount = parseInt(App.tokensSold)+parseInt(App.tokensAvailable)
+                $(".tokens-available").html(initAmount);
+                progressPercent = (Math.ceil(App.tokensSold) / initAmount)*100;
+                $("#progress").css("width", progressPercent + "%");
+                getCurrentAccountBalance().then(function (currentAccountBalance) {
+                    $(".dapp-balance").html(currentAccountBalance);
+                    if(initAmount > 0) {
+                        $("#start").hide();
+                        $("#content").show();
+                        $("#loader").hide();
+                    }else{
+                        $("#start").show();
+                        $("#content").hide();
+                        $("#loader").hide();
+                    }
+                })
+            })
+            .on('changed', function(event){
+                // remove event from local database
+            })
+            .on('error', console.error);
+    },
+
     buyToken: function (){
+        $("#content").hide();
+        $("#loader").show();
         buy($("#numberOfTokens").val()).then(function () {
             App.initContracts()
             $("#numberOfTokens").val("1")
@@ -137,6 +157,11 @@ async function getDappTokenSalePrice() {
 async function getDappTokenSold() {
     sold = await App.contracts.DappTokenSale.methods.tokensSold().call();
     return sold
+}
+
+async function getCurrentAccountBalance(){
+    balance = await App.contracts.DappToken.methods.balanceOf(App.currentAccount).call();
+    return(balance)
 }
 
 async function getDappTokenSaleBalance() {
