@@ -1,0 +1,120 @@
+t=2021-06-15T14:44:18+0200 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-06-15T14:46:48+0200 lvl=info msg=Version    api=signer type=request metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T14:46:48+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-15T14:50:10+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T14:50:39+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1]"
+t=2021-06-15T14:57:28+0200 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-06-15T14:57:48+0200 lvl=info msg=Version    api=signer type=request metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T14:57:48+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-15T14:58:01+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T14:58:06+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1]"
+t=2021-06-15T15:07:06+0200 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-06-15T15:07:46+0200 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-06-15T15:09:07+0200 lvl=info msg=Version    api=signer type=request metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T15:09:07+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-15T15:16:14+0200 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-06-15T15:16:51+0200 lvl=info msg=Version    api=signer type=request metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T15:16:51+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-15T15:18:25+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T15:18:32+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1]"
+t=2021-06-15T15:18:46+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T15:18:55+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1]"
+t=2021-06-15T15:19:30+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T15:19:38+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1]"
+t=2021-06-15T15:24:06+0200 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-06-15T15:24:17+0200 lvl=info msg=Version    api=signer type=request metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T15:24:17+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-15T16:02:57+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T16:03:02+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1]"
+t=2021-06-15T16:06:24+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T16:06:28+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T16:57:43+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T16:57:46+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T16:58:17+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T16:58:21+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T17:00:52+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:00:56+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T17:04:05+0200 lvl=info msg=Version    api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:04:05+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-15T17:05:49+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:05:52+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T17:11:23+0200 lvl=info msg=Version    api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:11:23+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-15T17:11:29+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:11:32+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T17:12:59+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:13:03+0200 lvl=info msg=List       api=signer type=response data=[]
+t=2021-06-15T17:13:54+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:13:58+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T17:14:15+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:14:18+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T17:15:28+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:15:32+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T17:16:00+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:16:03+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T17:16:51+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:16:55+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T17:18:01+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:18:04+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T17:18:22+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:18:24+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T17:18:38+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:18:40+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T17:18:56+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:19:00+0200 lvl=info msg=List       api=signer type=response data="[0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04 0x866ffb25b7869754ece06190d889009588c218f1 0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833]"
+t=2021-06-15T17:25:05+0200 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-06-15T17:25:34+0200 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-06-15T17:26:16+0200 lvl=info msg=Version    api=signer type=request metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:26:16+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-15T17:29:11+0200 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-06-15T17:29:40+0200 lvl=info msg=Version    api=signer type=request metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:29:40+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-15T17:54:51+0200 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-06-15T17:56:04+0200 lvl=info msg=Version    api=signer type=request metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:56:04+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-15T17:57:37+0200 lvl=info msg=Version    api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-15T17:57:37+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T11:09:27+0200 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-06-16T11:09:55+0200 lvl=info msg=Version    api=signer type=request metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T11:09:55+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T11:11:48+0200 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-06-16T11:11:57+0200 lvl=info msg=Version    api=signer type=request metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T11:11:57+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T11:13:42+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T11:13:45+0200 lvl=info msg=List       api=signer type=response data="[0x8981B77cAb9B5B1112eE3C3a3f0dA08e50848129 0x2c782296707CBE4318B3A49a4b4B7aeF9a0edbbf]"
+t=2021-06-16T11:17:47+0200 lvl=info msg=Version    api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T11:17:47+0200 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T11:30:19+0200 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T11:30:23+0200 lvl=info msg=List       api=signer type=response data="[0x8981B77cAb9B5B1112eE3C3a3f0dA08e50848129 0x2c782296707CBE4318B3A49a4b4B7aeF9a0edbbf]"
+t=2021-06-16T11:30:23+0200 lvl=info msg=SignTransaction api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}" tx="{\"from\":{},\"to\":\"0x2c782296707CBE4318B3A49a4b4B7aeF9a0edbbf\",\"gas\":\"0x5208\",\"gasPrice\":\"0x37e11d6000\",\"value\":\"0x2386f26fc10000\",\"nonce\":\"0x0\",\"data\":\"0x\",\"chainId\":\"0x5\"}" methodSelector=<nil>
+t=2021-06-16T11:30:37+0200 lvl=info msg=SignTransaction api=signer type=response data=f86b808537e11d6000825208942c782296707cbe4318b3a49a4b4b7aef9a0edbbf872386f26fc10000802da0256dfac8cf9dd5c02144ed40e1ef22d27f9472598d440b7e073bc4649c7484f7a0377783d3dd3375ec171d49bf697ff9bda3005cdb8504171d5b0d5f94a836e398 error=nil
+t=2021-06-16T11:33:18+0200 lvl=info msg=List            api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T11:33:22+0200 lvl=info msg=List            api=signer type=response data="[0x8981B77cAb9B5B1112eE3C3a3f0dA08e50848129 0x2c782296707CBE4318B3A49a4b4B7aeF9a0edbbf]"
+t=2021-06-16T11:41:41+0200 lvl=info msg=Version         api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T11:41:41+0200 lvl=info msg=Version         api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T11:41:55+0200 lvl=info msg=Version         api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T11:41:55+0200 lvl=info msg=Version         api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T11:44:42+0200 lvl=info msg=Version         api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T11:44:42+0200 lvl=info msg=Version         api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T11:45:16+0200 lvl=info msg=Version         api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T11:45:16+0200 lvl=info msg=Version         api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T14:20:20+0200 lvl=info msg=Version         api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T14:20:20+0200 lvl=info msg=Version         api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T14:24:27+0200 lvl=info msg=List            api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T14:24:30+0200 lvl=info msg=List            api=signer type=response data="[0x8981B77cAb9B5B1112eE3C3a3f0dA08e50848129 0x2c782296707CBE4318B3A49a4b4B7aeF9a0edbbf]"
+t=2021-06-16T14:33:55+0200 lvl=info msg=Version         api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T14:33:55+0200 lvl=info msg=Version         api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T14:34:38+0200 lvl=info msg=Version         api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T14:34:38+0200 lvl=info msg=Version         api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T14:35:19+0200 lvl=info msg=Version         api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T14:35:19+0200 lvl=info msg=Version         api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T14:37:15+0200 lvl=info msg=Version         api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T14:37:15+0200 lvl=info msg=Version         api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T14:37:29+0200 lvl=info msg=Version         api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T14:37:29+0200 lvl=info msg=Version         api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T14:38:09+0200 lvl=info msg=Version         api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T14:38:09+0200 lvl=info msg=Version         api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T14:44:20+0200 lvl=info msg=Version         api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T14:44:20+0200 lvl=info msg=Version         api=signer type=response data=6.1.0 error=nil
+t=2021-06-16T14:45:11+0200 lvl=info msg=Version         api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-06-16T14:45:11+0200 lvl=info msg=Version         api=signer type=response data=6.1.0 error=nil

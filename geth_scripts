@@ -1,0 +1,51 @@
+#start get
+#use rinkeby test network
+#use rpc flag
+#specify some libraries
+#specify ipc path (defaut in our case)
+geth --rinkeby --rpc --rpcapi="personal,eth,network,web3,net" --ipcpath "C:\Program Files\Geth\geth.exe"
+
+#ERROR[03-08|15:06:22.101] Unavailable modules in HTTP API list     unavailable=[network] available="[admin debug web3 eth txpool personal clique miner net]"
+geth --rinkeby --rpc --rpcapi="personal,eth,web3,net" --ipcpath "C:\Program Files\Geth\geth.exe"
+
+#On Windows, IPC is provided via named pipes. The default location of the geth pipe is:
+C:\Users\dfrances\Documents\SBPC\token_sale>geth attach
+Fatal: Unable to attach to remote geth: no known transport for URL scheme "c"
+
+geth --rinkeby --rpc --rpcapi="personal,eth,web3,net" --ipcpath "\\.\pipe\geth.ipc"
+
+#If you're using 1.8, you need to include the IPC path:
+
+
+After clef informations
+
+geth --rinkeby --syncmode "fast" --http --signer=\\.\pipe\clef.ipc
+
+geth attach ipc:\\.\pipe\geth.ipc
+
+
+web3.eth.accounts
+Get account list
+
+
+create a first account :
+geth --goerli account new
+0xc069E7C8A9C92e6acc9C93Ab2E9F1F4325eF8833
+pssw : GETHDamien4
+
+To ask ether at the network
+https://goerli-faucet.slock.it/
+
+To unlock account and use it to deployed contrcat like in truffle
+// null is because it is the password
+// 1200 is in sec (20mn)
+personal.unlockAccount(eth.accounts[0], null, 1200)
+
+
+
+clef --keystore C:\Users\dfrances\AppData\Local\Ethereum\keystore --chainid 5
+geth --goerli --syncmode "light" --http --signer=\\.\pipe\clef.ipc
+
+eth.sendTransaction({from:"0x8981b77cab9b5b1112ee3c3a3f0da08e50848129",to:"0x2c782296707cbe4318b3a49a4b4b7aef9a0edbbf", value: web3.toWei(0.01,"ether")})
+web3.fromWei(eth.getBalance("0x8981b77cab9b5b1112ee3c3a3f0da08e50848129"),"ether")
+web3.fromWei(eth.getBalance("0x2c782296707cbe4318b3a49a4b4b7aef9a0edbbf"),"ether")

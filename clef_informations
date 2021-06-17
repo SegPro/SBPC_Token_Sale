@@ -1,0 +1,29 @@
+clef init
+password : GETHDamien1
+
+clef newaccount
+password : GETHDamien2
+generated account : 0x6A55dAA76bbE6CE158C89Ab2F4404c613A1D3F04
+
+clef newaccount
+password : GETHDamien3
+generated account : 0x866ffb25b7869754ece06190d889009588c218f1
+
+GETH_DATA_DIR : C:\Users\dfrances\AppData\Local\Ethereum\geth
+
+clef --keystore C:\Users\dfrances\AppData\Local\Ethereum\keystore --chainid 4
+INFO [06-15|14:44:18.069] Starting signer                          chainid=4 keystore=C:\Users\dfrances\AppData\Local\Ethereum\keystore light-kdf=false advanced=false
+DEBUG[06-15|14:44:18.072] FS scan times                            list=0s set=0s diff=0s
+DEBUG[06-15|14:44:18.087] Ledger support enabled
+DEBUG[06-15|14:44:18.098] Trezor support enabled via HID
+DEBUG[06-15|14:44:18.109] Trezor support enabled via WebUSB
+INFO [06-15|14:44:18.111] Audit logs configured                    file=audit.log
+DEBUG[06-15|14:44:18.113] IPCs registered                          namespaces=account
+INFO [06-15|14:44:18.114] IPC endpoint opened                      url=\\.\pipe\clef.ipc
+------- Signer info -------
+* extapi_version : 6.1.0
+* extapi_http : n/a
+* extapi_ipc : \\.\pipe\clef.ipc
+* intapi_version : 7.0.1
+
+

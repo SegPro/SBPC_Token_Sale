@@ -73,7 +73,7 @@ App = {
                             App.tokensAvailable = dappTokenSaleBalance
                             getDappTokenSold().then(function (dappTokenSold) {
                                 App.tokensSold = dappTokenSold
-                                App.listenForEvents()
+                                //App.listenForEvents()
                             })
                         })
                     })
