@@ -73,12 +73,33 @@ App = {
                             App.tokensAvailable = dappTokenSaleBalance
                             getDappTokenSold().then(function (dappTokenSold) {
                                 App.tokensSold = dappTokenSold
-                                //App.listenForEvents()
+                                App.listenForEvents()
+                                App.render()
                             })
                         })
                     })
                 })
             })
+        })
+    },
+
+    render: function (){
+        $(".tokens-sold").html(App.tokensSold);
+        initAmount = parseInt(App.tokensSold)+parseInt(App.tokensAvailable)
+        $(".tokens-available").html(initAmount);
+        progressPercent = (Math.ceil(App.tokensSold) / initAmount)*100;
+        $("#progress").css("width", progressPercent + "%");
+        getCurrentAccountBalance().then(function (currentAccountBalance) {
+            $(".dapp-balance").html(currentAccountBalance);
+            if(initAmount > 0) {
+                $("#start").hide();
+                $("#content").show();
+                $("#loader").hide();
+            }else{
+                $("#start").show();
+                $("#content").hide();
+                $("#loader").hide();
+            }
         })
     },
 
@@ -89,23 +110,7 @@ App = {
         }, function(error, event){ console.log(event); })
             .on('data', function(event){
                 console.log("event triggered", event)
-                $(".tokens-sold").html(App.tokensSold);
-                initAmount = parseInt(App.tokensSold)+parseInt(App.tokensAvailable)
-                $(".tokens-available").html(initAmount);
-                progressPercent = (Math.ceil(App.tokensSold) / initAmount)*100;
-                $("#progress").css("width", progressPercent + "%");
-                getCurrentAccountBalance().then(function (currentAccountBalance) {
-                    $(".dapp-balance").html(currentAccountBalance);
-                    if(initAmount > 0) {
-                        $("#start").hide();
-                        $("#content").show();
-                        $("#loader").hide();
-                    }else{
-                        $("#start").show();
-                        $("#content").hide();
-                        $("#loader").hide();
-                    }
-                })
+                App.render()
             })
             .on('changed', function(event){
                 // remove event from local database
