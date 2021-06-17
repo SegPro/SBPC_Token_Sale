@@ -147,6 +147,7 @@ async function buy(amount){
 
 async function getContract(tokenName, token){
     networkId = await web3.eth.net.getId()
+    console.log(networkId)
     App.contracts[tokenName] = await new window.web3.eth.Contract(token.abi, token.networks[networkId.toString()].address);
 }
 
