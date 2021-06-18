@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>DApp Token ICO Sale</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- use to test install -->
+        <!--<h1>DAPP TOKEN ICO SALE</h1>-->
+        <div class="container" style="width: 650px;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">DAPP TOKEN ICO SALE</h1>
+                    <hr/>
+                    <p id="start" class="text-center" style="display: none">
+                        <button onclick="App.purveySale()" class="btn btn-primary btn-lg">Start ICO</button>
+                    </p>
+                    <br/>
+                </div>
+                <div id="loader">
+                    <p class="text-center">Loading...</p>
+                </div>
+                <div id="content" class="text-center" style="display: none">
+                    <p>
+                        Introducing "DApp Token" (DAPP) !
+                        Token price is <span class="token-price"></span> Ether. You currently have <span class="dapp-balance"></span>&nbsp;DAPP.
+                    </p>
+                    <br/>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input id="numberOfTokens" class="form-control input-group-lg" type="number" name="number" value="1" min="1" pattern="[0-9]">
+                                <span class="btn-group">
+                                    <button onclick="App.buyToken()" class="btn btn-primary btn-lg">Buy Tokens</button>
+                                </span>
+                            </div>
+                        </div>
+                    <br>
+                    <div class="progress">
+                        <div id="progress" class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <p>
+                        <span class="tokens-sold"></span> / <span class="tokens-available"></span> tokens sold
+                    </p>
+                    <hr>
+                    <p id="accountAddress">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/detect-provider.min.js"></script>
+        <!--<script src="js/truffle-contract.min.js"></script>-->
+        <script src="js/web3.min.js"></script>
+        <script src="app.js"></script>
+        <!--<script src="app2.js"></script>-->
+        <!--<script src="app3.js"></script>-->
+    </body>
+</html>
